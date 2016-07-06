@@ -13,27 +13,15 @@ RSpec.describe 'net_promoter_score' do
     end
   end
 
-#
-#   describe '#collect_red' do
-#
-#     subject { collect_red(score)}
-#
-#     it 'collects all the red data' do
-#       expect(subject).to eq ([1, 2, 2, 3, 5])
-#     end
-#   end
-#
-#   describe '#red_score' do
-#
-#     let(:red_data) {[1, 2, 2, 3, 5]}
-#
-#     subject {red_score(red_data, score)}
-#
-#     it 'prints the percentage for reds' do
-#       expect(subject).to eq(50)
-#     end
-#   end
-#
+  describe '#red_data' do
+
+    subject { red_data(data) }
+
+    it 'prints the percentage for reds' do
+      expect(subject).to eq(50)
+    end
+  end
+
 #   describe '#nps' do
 #     subject {nps(score)}
 #
